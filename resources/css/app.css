@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.menu-links {
+    @apply italic;
+}
+
+.menu-links a:hover {
+    @apply text-yellow-200 transition duration-300 font-bold;
+}
+
+/* Login Page */
+.login input {
+    @apply text-black px-2 my-4 outline-none rounded-md font-sans w-[300px];
+}
+
+.login button {
+    @apply border px-4 py-2 my-4 rounded-md hover:bg-white hover:text-black hover:font-bold;
+}
+
+/* Register Page */
+.register input {
+    @apply text-black px-2 my-4 outline-none rounded-md font-sans w-[300px];
+}
+
+.register button {
+    @apply border px-4 py-2 my-4 rounded-md hover:bg-white hover:text-black hover:font-bold;
+}
+
+/* Story Page */
+.biography {
+    @apply w-full max-w-xl mx-auto;
+}
+
+.biography h2 {
+    @apply font-bold text-xl my-4 border-b-4 border-black w-60;
+}
+
+.biography img {
+    @apply w-full max-w-[600px] mx-auto;
+;}
+
+p {
+    @apply text-lg leading-8;
+}
+
+/* Discography Page */
+.discography figure {
+    @apply w-80;
+}
+
+.discography img {
+    @apply w-full object-contain hover:scale-105 transition duration-500;
+}
+
+
+/* Community Page */
+.community button {
+    @apply bg-black text-white rounded-md px-16 py-4 my-4;
+}
+
+.go-back-button button {
+    @apply bg-black text-white rounded-md px-16 py-4 mt-10;
+}
+
+/* Contact Page */
+.contact-form {
+    @apply text-center shadow-lg bg-gray-300 shadow-black rounded-lg p-12 lg:p-4 lg:py-8 xl:p-12 xl:py-16;
+}
+
+.contact-form label {
+    @apply font-bold;
+}
+
+.contact-form input, textarea {
+    @apply text-black px-2 my-4 outline-none rounded-md font-sans w-[300px] border;
+}
+
+.contact-form textarea {
+    @apply max-h-[200px] overflow-auto;
+}
+
+.contact-form button {
+    @apply bg-black text-white rounded-md px-4 py-2 my-4;
+}
+
+/* Errors and Messages */
+.invalid-feedback {
+    @apply text-red-600;
+}
+
+.is-invalid {
+    @apply border-2 border-red-600;
+}
+
+.success-message {
+    @apply text-xl text-center text-white bg-green-500 rounded-md max-w-[500px] mx-auto p-1;
+}
+
+.edit-message {
+    @apply text-xl text-center text-white bg-blue-500 rounded-md max-w-[500px] mx-auto p-1;
+}
+
+.delete-message {
+    @apply text-xl text-center text-white bg-red-500 rounded-md max-w-[500px] mx-auto p-1;
+}
+
+/* Welcome User Page */
+.welcome {
+    background: url('../../public/pictures/dashboard-picture.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
