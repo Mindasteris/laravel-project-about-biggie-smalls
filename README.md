@@ -1,4 +1,4 @@
-# Laravel-project-about-biggie-smalls
+# Laravel project about Biggie Smalls
 Website about legendary Hip Hop artist Christopher Wallace aka  B.I.G.
 
 # Instructions
